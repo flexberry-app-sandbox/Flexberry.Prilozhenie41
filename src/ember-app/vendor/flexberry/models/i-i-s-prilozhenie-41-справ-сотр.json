@@ -16,7 +16,15 @@
       "ordered": false
     }
   ],
-  "belongsTo": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "справДолж",
+      "relatedTo": "i-i-s-prilozhenie-41-справ-долж",
+      "inverse": null
+    }
+  ],
   "hasMany": [],
   "projections": [
     {
@@ -30,7 +38,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": true,
+              "index": 2
+            }
+          ],
+          "index": 1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-prilozhenie-41-справ-долж",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     },
     {
@@ -44,7 +74,29 @@
           "index": 0
         }
       ],
-      "belongsTo": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "СправДолж",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "должность",
+              "caption": "Должность",
+              "hidden": false,
+              "index": 1
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Должность",
+          "name": "справДолж",
+          "relatedTo": "i-i-s-prilozhenie-41-справ-долж",
+          "inverse": null
+        }
+      ],
       "hasMany": []
     }
   ],

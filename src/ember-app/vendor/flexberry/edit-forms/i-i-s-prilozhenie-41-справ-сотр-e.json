@@ -1,5 +1,14 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "СправДолж",
+      "projection": "СправДолжL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "",
   "name": "IISPrilozhenie_41СправСотрE",

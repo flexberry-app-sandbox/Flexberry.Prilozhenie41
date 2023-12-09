@@ -30,13 +30,19 @@ namespace IIS.Prilozhenie_41
     [Caption("Справочник Сотрудники")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СправСотрE", new string[] {
-            "Фио as \'Сотрудник\'"})]
+            "Фио as \'Сотрудник\'",
+            "СправДолж as \'Должность\'",
+            "СправДолж.Должность as \'Должность\'"}, Hidden=new string[] {
+            "СправДолж.Должность"})]
     [View("СправСотрL", new string[] {
-            "Фио as \'Сотрудник\'"})]
+            "Фио as \'Сотрудник\'",
+            "СправДолж.Должность as \'Должность\'"})]
     public class СправСотр : ICSSoft.STORMNET.DataObject
     {
         
         private string fФио;
+        
+        private IIS.Prilozhenie_41.СправДолж fСправДолж;
         
         // *** Start programmer edit section *** (СправСотр CustomMembers)
 
@@ -72,6 +78,40 @@ namespace IIS.Prilozhenie_41
                 // *** Start programmer edit section *** (СправСотр.Фио Set end)
 
                 // *** End programmer edit section *** (СправСотр.Фио Set end)
+            }
+        }
+        
+        /// <summary>
+        /// СправСотр.
+        /// </summary>
+        // *** Start programmer edit section *** (СправСотр.СправДолж CustomAttributes)
+
+        // *** End programmer edit section *** (СправСотр.СправДолж CustomAttributes)
+        [PropertyStorage(new string[] {
+                "СправДолж"})]
+        [NotNull()]
+        public virtual IIS.Prilozhenie_41.СправДолж СправДолж
+        {
+            get
+            {
+                // *** Start programmer edit section *** (СправСотр.СправДолж Get start)
+
+                // *** End programmer edit section *** (СправСотр.СправДолж Get start)
+                IIS.Prilozhenie_41.СправДолж result = this.fСправДолж;
+                // *** Start programmer edit section *** (СправСотр.СправДолж Get end)
+
+                // *** End programmer edit section *** (СправСотр.СправДолж Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (СправСотр.СправДолж Set start)
+
+                // *** End programmer edit section *** (СправСотр.СправДолж Set start)
+                this.fСправДолж = value;
+                // *** Start programmer edit section *** (СправСотр.СправДолж Set end)
+
+                // *** End programmer edit section *** (СправСотр.СправДолж Set end)
             }
         }
         

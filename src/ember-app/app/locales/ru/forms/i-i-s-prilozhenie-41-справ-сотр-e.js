@@ -1,4 +1,5 @@
 export default {
   caption: '',
-  'фио-caption': 'Сотрудник'
+  'фио-caption': 'Сотрудник',
+  'справДолж-caption': 'Должность'
 };
