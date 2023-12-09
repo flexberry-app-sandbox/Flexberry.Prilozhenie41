@@ -29,11 +29,16 @@ namespace IIS.Prilozhenie_41
     [AutoAltered()]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("БазаДанныхE", new string[] {
-            "НомерКарты as \'Номер Карты\'"})]
+            "НомерКарты as \'Номер Карты\'",
+            "СправУч as \'Ученик\'",
+            "СправУч.Фио as \'Фио Ученика\'"})]
+    [MasterViewDefineAttribute("БазаДанныхE", "СправУч", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Фио Ученика")]
     public class БазаДанных : ICSSoft.STORMNET.DataObject
     {
         
         private string fНомерКарты;
+        
+        private IIS.Prilozhenie_41.СправУч fСправУч;
         
         private IIS.Prilozhenie_41.КартДоступ fКартДоступ;
         
@@ -71,6 +76,40 @@ namespace IIS.Prilozhenie_41
                 // *** Start programmer edit section *** (БазаДанных.НомерКарты Set end)
 
                 // *** End programmer edit section *** (БазаДанных.НомерКарты Set end)
+            }
+        }
+        
+        /// <summary>
+        /// БазаДанных.
+        /// </summary>
+        // *** Start programmer edit section *** (БазаДанных.СправУч CustomAttributes)
+
+        // *** End programmer edit section *** (БазаДанных.СправУч CustomAttributes)
+        [PropertyStorage(new string[] {
+                "СправУч"})]
+        [NotNull()]
+        public virtual IIS.Prilozhenie_41.СправУч СправУч
+        {
+            get
+            {
+                // *** Start programmer edit section *** (БазаДанных.СправУч Get start)
+
+                // *** End programmer edit section *** (БазаДанных.СправУч Get start)
+                IIS.Prilozhenie_41.СправУч result = this.fСправУч;
+                // *** Start programmer edit section *** (БазаДанных.СправУч Get end)
+
+                // *** End programmer edit section *** (БазаДанных.СправУч Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (БазаДанных.СправУч Set start)
+
+                // *** End programmer edit section *** (БазаДанных.СправУч Set start)
+                this.fСправУч = value;
+                // *** Start programmer edit section *** (БазаДанных.СправУч Set end)
+
+                // *** End programmer edit section *** (БазаДанных.СправУч Set end)
             }
         }
         

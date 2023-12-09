@@ -9,6 +9,8 @@ CREATE TABLE "БазаДанных"
 
 	"НомерКарты" NVARCHAR2(255) NULL,
 
+	"СправУч" RAW(16) NOT NULL,
+
 	"КартДоступ" RAW(16) NOT NULL,
 
 	 PRIMARY KEY ("primaryKey")
@@ -258,6 +260,11 @@ CREATE TABLE "ApplicationLog"
 ) ;
 
 
+
+ALTER TABLE "БазаДанных"
+	ADD CONSTRAINT "БазаДанных_FС_3615" FOREIGN KEY ("СправУч") REFERENCES "СправУч" ("primaryKey");
+
+CREATE INDEX "БазаДанных_IС_4703" on "БазаДанных" ("СправУч");
 
 ALTER TABLE "БазаДанных"
 	ADD CONSTRAINT "БазаДанных_FК_7117" FOREIGN KEY ("КартДоступ") REFERENCES "КартДоступ" ("primaryKey");

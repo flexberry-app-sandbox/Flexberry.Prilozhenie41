@@ -35,7 +35,10 @@ export let defineProjections = function (modelClass) {
       }, { index: -1, hidden: true })
     }, { index: 0 }),
     базаДанных: hasMany('i-i-s-prilozhenie-41-база-данных', 'База Данных', {
-      номерКарты: attr('Номер Карты', { index: 0 })
+      номерКарты: attr('Номер Карты', { index: 0 }),
+      справУч: belongsTo('i-i-s-prilozhenie-41-справ-уч', 'Ученик', {
+        фио: attr('Фио Ученика', { index: 2 })
+      }, { index: 1, displayMemberPath: 'фио Ученика' })
     })
   });
 

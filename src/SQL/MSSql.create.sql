@@ -8,6 +8,8 @@ CREATE TABLE [БазаДанных] (
 
 	 [НомерКарты] VARCHAR(255)  NULL,
 
+	 [СправУч] UNIQUEIDENTIFIER  NOT NULL,
+
 	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
