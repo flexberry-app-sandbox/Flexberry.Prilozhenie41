@@ -22,7 +22,7 @@ export default Controller.extend({
             link: 'i-i-s-prilozhenie-41-справ-долж-l',
             caption: i18n.t('forms.application.sitemap.prilozhenie-41.i-i-s-prilozhenie-41-справ-долж-l.caption'),
             title: i18n.t('forms.application.sitemap.prilozhenie-41.i-i-s-prilozhenie-41-справ-долж-l.title'),
-            icon: 'table',
+            icon: 'folder',
             children: null
           }]
         }

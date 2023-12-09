@@ -27,7 +27,7 @@ namespace IIS.Prilozhenie_41
 
     // *** End programmer edit section *** (СправДолж CustomAttributes)
     [AutoAltered()]
-    [Caption("Справ долж")]
+    [Caption("Справочник Должность")]
     [AccessType(ICSSoft.STORMNET.AccessType.none)]
     [View("СправДолжE", new string[] {
             "Должность as \'Должность\'"})]
