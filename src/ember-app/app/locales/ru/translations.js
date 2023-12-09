@@ -1,10 +1,13 @@
 import $ from 'jquery';
 import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations';
 
+import IISPrilozhenie_41КартДоступLForm from './forms/i-i-s-prilozhenie-41-карт-доступ-l';
 import IISPrilozhenie_41СправДолжLForm from './forms/i-i-s-prilozhenie-41-справ-долж-l';
 import IISPrilozhenie_41СправСотрLForm from './forms/i-i-s-prilozhenie-41-справ-сотр-l';
+import IISPrilozhenie_41КартДоступEForm from './forms/i-i-s-prilozhenie-41-карт-доступ-e';
 import IISPrilozhenie_41СправДолжEForm from './forms/i-i-s-prilozhenie-41-справ-долж-e';
 import IISPrilozhenie_41СправСотрEForm from './forms/i-i-s-prilozhenie-41-справ-сотр-e';
+import IISPrilozhenie_41КартДоступModel from './models/i-i-s-prilozhenie-41-карт-доступ';
 import IISPrilozhenie_41СправДолжModel from './models/i-i-s-prilozhenie-41-справ-долж';
 import IISPrilozhenie_41СправСотрModel from './models/i-i-s-prilozhenie-41-справ-сотр';
 
@@ -13,6 +16,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-prilozhenie-41-карт-доступ': IISPrilozhenie_41КартДоступModel,
     'i-i-s-prilozhenie-41-справ-долж': IISPrilozhenie_41СправДолжModel,
     'i-i-s-prilozhenie-41-справ-сотр': IISPrilozhenie_41СправСотрModel
   },
@@ -90,6 +94,10 @@ $.extend(true, translations, {
           'i-i-s-prilozhenie-41-справ-сотр-l': {
             caption: 'Справочник Сотрудники',
             title: ''
+          },
+          'i-i-s-prilozhenie-41-карт-доступ-l': {
+            caption: 'База Данных',
+            title: ''
           }
         }
       }
@@ -103,8 +111,10 @@ $.extend(true, translations, {
       'delete-success-message': 'Объект удален',
       'delete-error-message-caption': 'Ошибка удаления'
     },
+    'i-i-s-prilozhenie-41-карт-доступ-l': IISPrilozhenie_41КартДоступLForm,
     'i-i-s-prilozhenie-41-справ-долж-l': IISPrilozhenie_41СправДолжLForm,
     'i-i-s-prilozhenie-41-справ-сотр-l': IISPrilozhenie_41СправСотрLForm,
+    'i-i-s-prilozhenie-41-карт-доступ-e': IISPrilozhenie_41КартДоступEForm,
     'i-i-s-prilozhenie-41-справ-долж-e': IISPrilozhenie_41СправДолжEForm,
     'i-i-s-prilozhenie-41-справ-сотр-e': IISPrilozhenie_41СправСотрEForm
   },

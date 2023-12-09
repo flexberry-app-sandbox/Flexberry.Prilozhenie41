@@ -22,6 +22,15 @@ CREATE TABLE [СправДолж] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [КартДоступ] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [СправСотр] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [STORMNETLOCKDATA] (
 
 	 [LockKey] VARCHAR(300)  NOT NULL,

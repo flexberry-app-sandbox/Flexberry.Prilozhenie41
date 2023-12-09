@@ -6,6 +6,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
+  this.route('i-i-s-prilozhenie-41-карт-доступ-l');
+  this.route('i-i-s-prilozhenie-41-карт-доступ-e',
+  { path: 'i-i-s-prilozhenie-41-карт-доступ-e/:id' });
+  this.route('i-i-s-prilozhenie-41-карт-доступ-e.new',
+  { path: 'i-i-s-prilozhenie-41-карт-доступ-e/new' });
   this.route('i-i-s-prilozhenie-41-справ-долж-l');
   this.route('i-i-s-prilozhenie-41-справ-долж-e',
   { path: 'i-i-s-prilozhenie-41-справ-долж-e/:id' });
