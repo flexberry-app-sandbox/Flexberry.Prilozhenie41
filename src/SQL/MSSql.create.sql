@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE [БазаДанных] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [НомерКарты] VARCHAR(255)  NULL,
+
+	 [КартДоступ] UNIQUEIDENTIFIER  NOT NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СправСотр] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

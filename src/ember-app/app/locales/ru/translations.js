@@ -7,6 +7,7 @@ import IISPrilozhenie_41СправСотрLForm from './forms/i-i-s-prilozhenie-
 import IISPrilozhenie_41КартДоступEForm from './forms/i-i-s-prilozhenie-41-карт-доступ-e';
 import IISPrilozhenie_41СправДолжEForm from './forms/i-i-s-prilozhenie-41-справ-долж-e';
 import IISPrilozhenie_41СправСотрEForm from './forms/i-i-s-prilozhenie-41-справ-сотр-e';
+import IISPrilozhenie_41БазаДанныхModel from './models/i-i-s-prilozhenie-41-база-данных';
 import IISPrilozhenie_41КартДоступModel from './models/i-i-s-prilozhenie-41-карт-доступ';
 import IISPrilozhenie_41СправДолжModel from './models/i-i-s-prilozhenie-41-справ-долж';
 import IISPrilozhenie_41СправСотрModel from './models/i-i-s-prilozhenie-41-справ-сотр';
@@ -16,6 +17,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-prilozhenie-41-база-данных': IISPrilozhenie_41БазаДанныхModel,
     'i-i-s-prilozhenie-41-карт-доступ': IISPrilozhenie_41КартДоступModel,
     'i-i-s-prilozhenie-41-справ-долж': IISPrilozhenie_41СправДолжModel,
     'i-i-s-prilozhenie-41-справ-сотр': IISPrilozhenie_41СправСотрModel
