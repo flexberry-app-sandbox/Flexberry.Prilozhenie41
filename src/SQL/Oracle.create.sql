@@ -39,6 +39,17 @@ CREATE TABLE "СправДолж"
 ) ;
 
 
+CREATE TABLE "СправУч"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "КартДоступ"
 (
 
