@@ -3,6 +3,12 @@
 
 
 
+CREATE TABLE СправСотр (
+ primaryKey UUID NOT NULL,
+ Фио VARCHAR(255) NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE СправДолж (
  primaryKey UUID NOT NULL,
  Должность VARCHAR(255) NULL,

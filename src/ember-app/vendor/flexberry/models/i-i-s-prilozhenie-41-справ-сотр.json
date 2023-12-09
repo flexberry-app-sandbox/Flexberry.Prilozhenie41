@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISPrilozhenie_41СправСотр",
+  "modelName": "i-i-s-prilozhenie-41-справ-сотр",
+  "className": "СправСотр",
+  "nameSpace": "IIS.Prilozhenie_41",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "фио",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "СправСотрE",
+      "modelName": "i-i-s-prilozhenie-41-справ-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Сотрудник",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "СправСотрL",
+      "modelName": "i-i-s-prilozhenie-41-справ-сотр",
+      "attrs": [
+        {
+          "name": "фио",
+          "caption": "Сотрудник",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

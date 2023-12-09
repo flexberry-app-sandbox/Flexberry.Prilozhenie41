@@ -14,6 +14,13 @@
           "caption": "Справочник Должность",
           "title": "",
           "children": null
+        },
+        {
+          "link": "i-i-s-prilozhenie-41-справ-сотр-l",
+          "menuName": null,
+          "caption": "Справочник Сотрудники",
+          "title": "",
+          "children": null
         }
       ]
     }

@@ -2,6 +2,15 @@
 
 
 
+CREATE TABLE [СправСотр] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Фио] VARCHAR(255)  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [СправДолж] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,

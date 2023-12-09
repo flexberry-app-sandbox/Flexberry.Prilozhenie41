@@ -2,6 +2,17 @@
 
 
 
+CREATE TABLE "СправСотр"
+(
+
+	"primaryKey" RAW(16) NOT NULL,
+
+	"Фио" NVARCHAR2(255) NULL,
+
+	 PRIMARY KEY ("primaryKey")
+) ;
+
+
 CREATE TABLE "СправДолж"
 (
 
